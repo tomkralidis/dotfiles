@@ -1,0 +1,8 @@
+[user]
+	name = Tom Kralidis
+	email = tomkralidis@hotmail.com
+[github]
+	user = tomkralidis
+[core]
+	editor = vi
+[svn]
