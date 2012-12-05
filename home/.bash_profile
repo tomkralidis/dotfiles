@@ -18,7 +18,6 @@ export IRCNAME="Tom Kralidis"
 export IRCSERVER=irc.freenode.net
 
 export SVN_EDITOR=/bin/vi
-export PYCSW=/www/websites/www.kralidis.ca/htdocs/venv/pycsw
 
 export LD_LIBRARY_PATH=/home/$USER/lib
 export PATH=$PATH:/home/$USER/bin
