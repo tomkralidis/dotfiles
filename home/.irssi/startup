@@ -7,3 +7,5 @@
 /channel add -auto #pycsw freenode
 /channel add -auto #mapserver freenode
 /channel add -auto #ckan freenode
+/channel add -auto #qgis freenode
+
