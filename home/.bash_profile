@@ -14,6 +14,7 @@ fi
 # User specific environment and startup programs
 
 alias ll='ls -lF'
+alias dir='ll'
 alias lt='ll -t'
 alias rm='rm -i'
 alias cp='cp -i'
