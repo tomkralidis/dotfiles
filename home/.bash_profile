@@ -2,7 +2,13 @@
 
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
-	. ~/.bashrc
+    . ~/.bashrc
+fi
+
+# figure out OS
+if [ `uname -s` == 'MINGW32_NT-6.1' ]; then
+    export USER=$USERNAME
+    alias more='less'
 fi
 
 # User specific environment and startup programs
@@ -21,5 +27,5 @@ export IRCSERVER=irc.freenode.net
 
 export SVN_EDITOR=/bin/vi
 
-export LD_LIBRARY_PATH=/home/$USER/lib
-export PATH=$PATH:/home/$USER/bin
+export LD_LIBRARY_PATH=$HOME/lib
+export PATH=$PATH:$HOME/bin
