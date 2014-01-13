@@ -28,8 +28,8 @@ alias fact='elinks -dump http://randomfunfacts.com  | sed -n "/^| /p" | tr -d \|
 
 # functions (which are too complex for simple aliases)
 
-function unixtime2datetime() {
-    # convert unix timestamp to date
+function unixtime2iso8601() {
+    # convert unix timestamp to ISO 8601 datetime
     python -c "import datetime;print(datetime.datetime.fromtimestamp(int("$@")).strftime('%Y-%m-%dT%H:%M:%SZ'))"
 }
 
