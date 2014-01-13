@@ -26,6 +26,13 @@ alias pine='alpine'
 # https://twitter.com/climagic/status/416618976496463872
 alias fact='elinks -dump http://randomfunfacts.com  | sed -n "/^| /p" | tr -d \|'
 
+# functions (which are too complex for simple aliases)
+
+function unixtime2datetime() {
+    # convert unix timestamp to date
+    python -c "import datetime;print(datetime.datetime.fromtimestamp(int("$@")).strftime('%Y-%m-%dT%H:%M:%SZ'))"
+}
+
 # environment variables
 export IRCNICK=tomkralidis
 export IRCNAME="Tom Kralidis"
