@@ -1,4 +1,3 @@
-
 " from http://vim.wikia.com/wiki/Restore_cursor_to_file_position_in_previous_editing_session
 
 " Tell vim to remember certain things when we exit
@@ -23,3 +22,5 @@ augroup END
 
 " se nu
 " set autoindent
+
+syntax off
