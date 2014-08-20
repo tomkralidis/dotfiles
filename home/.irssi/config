@@ -7,6 +7,12 @@ servers = (
     ssl_verify = "no";
     autoconnect = "yes";
   },
+  {
+    address = "talk.google.com";
+    chatnet = "gtalk";
+    password = "<password>";
+    autoconnect = "true";
+  },
   #  {
   #    address = "irc.oftc.net";
   #    chatnet = "oftc";
@@ -64,6 +70,7 @@ chatnets = {
   SILC = { type = "SILC"; };
   freenode = { type = "IRC"; };
   oftc = { type = "IRC"; };
+  gtalk = { type = "XMPP"; nick = "tomkralidis@gmail.com"; };
 };
 
 channels = (
