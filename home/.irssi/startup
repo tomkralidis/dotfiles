@@ -1,5 +1,5 @@
 
-/server add -auto -network freenode irc.freenode.net 6667
+/server add -auto -network freenode irc.freenode.net 6667 <password>
 
 /channel add -auto #osgeo freenode
 /channel add -auto #geopython freenode
@@ -8,4 +8,4 @@
 /channel add -auto #mapserver freenode
 /channel add -auto #ckan freenode
 /channel add -auto #qgis freenode
-
+/load xmpp
