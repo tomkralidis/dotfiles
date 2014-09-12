@@ -41,4 +41,4 @@ export IRCSERVER=irc.freenode.net
 export SVN_EDITOR=/bin/vi
 export LD_LIBRARY_PATH=$HOME/lib
 export PATH=$PATH:$HOME/bin
-
+export PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
