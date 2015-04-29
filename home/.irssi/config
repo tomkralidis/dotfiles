@@ -81,7 +81,9 @@ channels = (
   { name = "#geonode"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#pycsw"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#mapserver"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#ckan"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#ckan"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#gdal"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#pocoo"; chatnet = "freenode"; autojoin = "yes"; }
 );
 
 aliases = {
