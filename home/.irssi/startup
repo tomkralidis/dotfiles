@@ -8,4 +8,6 @@
 /channel add -auto #mapserver freenode
 /channel add -auto #ckan freenode
 /channel add -auto #qgis freenode
+/channel add -auto #gdal freenode
+/channel add -auto #pocoo freenode
 /load xmpp
