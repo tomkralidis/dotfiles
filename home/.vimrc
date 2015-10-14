@@ -24,3 +24,6 @@ augroup END
 " set autoindent
 
 syntax off
+set number  " show line numbers
+set incsearch  " search as characters are entered
+set hlsearch  " highlight matches
