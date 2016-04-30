@@ -9,6 +9,10 @@ fi
 if [ `uname -s` == 'MINGW32_NT-6.1' ]; then
     export USER=$USERNAME
     alias more='less'
+elif [ `uname -s` == 'Darwin' ]; then
+    if [ -f ~/.git-completion.bash ]; then
+        source ~/.git-completion.bash
+    fi
 fi
 
 # User specific environment and startup programs
