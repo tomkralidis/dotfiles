@@ -26,6 +26,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias up='cd ..'
 alias myprocs='ps aux | grep $USER'
+alias howlong='ps -eo pid,etime,command|grep $@'
 alias pine='alpine'
 alias pywebserver='python -mSimpleHTTPServer'
 # https://twitter.com/climagic/status/416618976496463872
