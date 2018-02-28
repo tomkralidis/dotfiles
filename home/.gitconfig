@@ -6,3 +6,5 @@
 [core]
 	editor = vi
 [svn]
+[credential]
+        helper = cache --timeout=86400
