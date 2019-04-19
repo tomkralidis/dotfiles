@@ -25,6 +25,7 @@ augroup END
 
 syntax off
 set number  " show line numbers
+set ruler " show ruler at bottom right
 set incsearch  " search as characters are entered
 set hlsearch  " highlight matches
 
