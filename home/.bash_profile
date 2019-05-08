@@ -6,7 +6,7 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # figure out OS
-if [ `uname -s` == 'MINGW32_NT-6.1' ]; then
+if [ `uname -s` == 'MINGW32_NT-10.0' ]; then
     export USER=$USERNAME
     alias more='less'
 elif [ `uname -s` == 'Darwin' ]; then
@@ -30,8 +30,9 @@ alias howlong='ps -eo pid,etime,command|grep $@'
 alias numcores='cat /proc/cpuinfo | grep processor | wc -l'
 alias pine='alpine'
 alias pywebserver='python -mSimpleHTTPServer'
-# https://twitter.com/climagic/status/416618976496463872
-alias fact='elinks -dump http://randomfunfacts.com  | sed -n "/^| /p" | tr -d \|'
+function fact() {
+    curl -s http://randomfunfacts.com  | grep "<strong>"|sed 's#<td bordercolor="\#FFFFFF"><font face="Verdana" size="4"><strong><i>##'|sed 's#</i></strong></font>&nbsp;</td>##'
+}
 
 # functions (which are too complex for simple aliases)
 
