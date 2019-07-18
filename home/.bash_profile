@@ -36,9 +36,14 @@ function fact() {
 
 # functions (which are too complex for simple aliases)
 
+# convert unix timestamp to ISO 8601 datetime
 function unixtime2iso8601() {
-    # convert unix timestamp to ISO 8601 datetime
     python -c "import datetime;print(datetime.datetime.fromtimestamp(int("$@")).strftime('%Y-%m-%dT%H:%M:%SZ'))"
+}
+
+# determine how long a pid has been running for
+function howlong() {
+    ps -o etime= -p "$@"
 }
 
 # environment variables
