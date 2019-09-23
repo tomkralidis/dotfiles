@@ -10,7 +10,9 @@ if [ `uname -s` == 'MINGW32_NT-10.0' ]; then
     export USER=$USERNAME
     alias more='less'
 elif [ `uname -s` == 'Darwin' ]; then
-    if [ -f ~/.git-completion.bash ]; then
+    if [ -f /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash ]; then
+        source /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
+    elif [ -f ~/.git-completion.bash ]; then
         source ~/.git-completion.bash
     fi
 fi
@@ -54,3 +56,8 @@ export SVN_EDITOR=/bin/vi
 export LD_LIBRARY_PATH=$HOME/lib
 export PATH=$PATH:$HOME/bin
 export PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+
+# Setting PATH for Python 3.7
+# The original version is saved in .bash_profile.pysave
+# PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+# export PATH
