@@ -15,6 +15,7 @@ elif [ `uname -s` == 'Darwin' ]; then
     elif [ -f ~/.git-completion.bash ]; then
         source ~/.git-completion.bash
     fi
+    alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"    
 fi
 
 # User specific environment and startup programs
