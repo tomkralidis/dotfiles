@@ -5,6 +5,10 @@
 	user = tomkralidis
 [core]
 	editor = vi
+	eol = lf
+	autocrlf = input
 [svn]
 [credential]
         helper = cache --timeout=86400
+[init]
+	defaultBranch = main

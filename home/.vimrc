@@ -30,4 +30,4 @@ set incsearch  " search as characters are entered
 set hlsearch  " highlight matches
 
 " redefine tab as 4 spaces https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces
-set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
+"set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab

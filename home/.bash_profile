@@ -16,6 +16,7 @@ elif [ `uname -s` == 'Darwin' ]; then
         source ~/.git-completion.bash
     fi
     alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"    
+    alias dos2unix='perl -pe 's/\r\n/\n/g' $@'
 fi
 
 # User specific environment and startup programs
@@ -33,6 +34,7 @@ alias howlong='ps -eo pid,etime,command|grep $@'
 alias numcores='cat /proc/cpuinfo | grep processor | wc -l'
 alias pine='alpine'
 alias pywebserver='python -mSimpleHTTPServer'
+
 function fact() {
     curl -s http://randomfunfacts.com  | grep "<strong>"|sed 's#<td bordercolor="\#FFFFFF"><font face="Verdana" size="4"><strong><i>##'|sed 's#</i></strong></font>&nbsp;</td>##'
 }
