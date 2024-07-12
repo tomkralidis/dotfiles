@@ -25,9 +25,10 @@ augroup END
 
 syntax off
 set number  " show line numbers
-set ruler " show ruler at bottom right
+set ruler  " show ruler at bottom right
 set incsearch  " search as characters are entered
 set hlsearch  " highlight matches
+set noswapfile  " do not create .swp files when editing
 
 " redefine tab as 4 spaces https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces
 "set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
