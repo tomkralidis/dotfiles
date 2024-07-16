@@ -59,6 +59,7 @@ export SVN_EDITOR=/bin/vi
 export LD_LIBRARY_PATH=$HOME/lib
 export PATH=$PATH:$HOME/bin
 export PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+export NGROK_DOMAIN=noble-kite-arriving.ngrok-free.app
 
 # Setting PATH for Python 3.7
 # The original version is saved in .bash_profile.pysave
