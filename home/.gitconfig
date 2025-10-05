@@ -1,14 +1,16 @@
 [user]
-	name = Tom Kralidis
-	email = tomkralidis@gmail.com
+    name = Tom Kralidis
+    email = tomkralidis@gmail.com
 [github]
-	user = tomkralidis
+    user = tomkralidis
 [core]
-	editor = vi
-	eol = lf
-	autocrlf = input
+    editor = vi
+    eol = lf
+    autocrlf = input
 [svn]
 [credential]
-        helper = cache --timeout=86400
+    helper = cache --timeout=86400
 [init]
-	defaultBranch = main
+    defaultBranch = main
+[http]
+    postBuffer = 524288000
